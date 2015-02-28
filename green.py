@@ -1,3 +1,4 @@
+import datetime
 import os
 
 
@@ -26,5 +27,11 @@ def trick_commit(year, month, day):
     modify()
     commit()
 
+
+def daily_commit(start_date, end_date):
+    for i in range((end_date - start_date).days):
+        cur_date = start_date + datetime.timedelta(days=i)
+        trick_commit(cur_date.year, cur_date.month, cur_date.day)
+
 if __name__ == '__main__':
-    trick_commit(2016, 1, 18)
+    daily_commit(datetime.date(2015, 3, 1), datetime.date(2015, 3, 31))
