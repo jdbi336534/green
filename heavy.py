@@ -52,5 +52,5 @@ def love_commit(start_date, path, etc_path):
 
 
 if __name__ == '__main__':
-    love_commit(datetime.date(2015, 9, 28), '/media/Software/coding/python/loveci/only.you', 'etc/love')
+    love_commit(datetime.date(2015, 9, 28), '/home/green/green/zero.md', 'etc/love')
 
