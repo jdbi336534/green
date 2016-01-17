@@ -21,7 +21,10 @@ def set_time(year, month, day):
     os.system('date -s %04d%02d%02d' % (year, month, day))
 
 
-if __name__ == '__main__':
-    set_time(2016, 1, 18)
+def trick_commit(year, month, day):
+    set_time(year, month, day)
     modify()
     commit()
+
+if __name__ == '__main__':
+    trick_commit(2016, 1, 18)
