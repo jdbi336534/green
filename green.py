@@ -23,4 +23,5 @@ def set_time(year, month, day):
 
 if __name__ == '__main__':
     set_time(2016, 1, 18)
+    modify()
     commit()
