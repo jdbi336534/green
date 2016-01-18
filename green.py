@@ -57,5 +57,5 @@ def linux_set_time(year, month, day, hour, min, sec, mm):
 
 
 if __name__ == '__main__':
-    linux_set_time(2016, 3, 7, 19, 0, 0, 0)
+    os.system('date -s 20160119')
     commit()
