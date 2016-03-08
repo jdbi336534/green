@@ -48,11 +48,9 @@ def love_commit(start_date, path):
     words = read_etc('etc/love')
     for index in words:
         cur_date = start_date + datetime.timedelta(days=index)
-        special_commit(path, cur_date, 26)
+        special_commit(path, cur_date, 15)
 
 
 if __name__ == '__main__':
     love_commit(datetime.date(2015, 3, 1), '/media/Software/coding/python/loveci/only.you')
-#     84 90 91 97 98 99 100 101 102 103 104 105 111 112 118
-# 169 170 171 175 179 182 187 190 195 196 201 203 207 211 212 213
-# 266 267 268 269 270 271 279 286 293 294 295 296 297 298 299
+
