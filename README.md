@@ -20,9 +20,14 @@
 
 修改green.py中，main部分传入你需要刷的起始时间和结束时间，
 
+```python
+if __name__ == '__main__':
+    daily_commit(datetime.date(2015, 3, 31), datetime.date(2016, 1, 28))
+```
+
 在green目录下，
 
-```shell
+```
 sudo python green.py
 git push origin master
 ```
@@ -37,6 +42,10 @@ git push origin master
  深色提交
 
 > 在heavy.py中，main部分传入小绿点方阵最左上角（第一列周日）的日期，要commit的文件所在的目录，配置文件的目录，即可做深色提交
+```python
+if __name__ == '__main__':
+    love_commit(datetime.date(2015, 3, 1), '/media/Software/coding/python/loveci/only.you', 'etc/love')
+```
 
 > 特殊形状通过etc目录下的文件中，配置想要commit的index来实现，当前etc中的love可以实现I ❤ U的效果
 
