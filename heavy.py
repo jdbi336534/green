@@ -44,13 +44,13 @@ def read_etc(path):
     return intIdxes
 
 
-def love_commit(start_date, path):
-    words = read_etc('etc/love')
+def love_commit(start_date, path, etc_path):
+    words = read_etc(etc_path)
     for index in words:
         cur_date = start_date + datetime.timedelta(days=index)
         special_commit(path, cur_date, 15)
 
 
 if __name__ == '__main__':
-    love_commit(datetime.date(2015, 3, 1), '/media/Software/coding/python/loveci/only.you')
+    love_commit(datetime.date(2015, 3, 1), '/media/Software/coding/python/loveci/only.you', 'etc/love')
 
