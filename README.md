@@ -34,8 +34,16 @@ git push origin master
 
 就能通过修改系统时间实现过去的commit，从而刷遍过去的小绿点（如果是fork工程而不是自己的工程，要提PR）
 
-> 因为修改系统时间使用了date命令，所以要用sudo提高权限执行，否则执行后都是今天的commit
+> 因为修改系统时间使用了date命令（我的环境是ubuntu，windows要用另外的命令），所以要用sudo提高权限执行，否则执行后都是今天的commit
 
+###原理
+```python
+def trick_commit(year, month, day):
+    set_sys_time(year, month, day)  # 设置系统时间
+    modify()  # 修改文件
+    commit()  # 调用git commit
+```
+具体每个函数的实现可以看green.py
 
 ###heavy
 
