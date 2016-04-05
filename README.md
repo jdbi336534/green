@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
 > 这些index的含义是，从github小绿点方针左上角第一个位置（第一列周日的位置），往后的天数
 
-> 建议新建另一个工程，对它做提交，这样可以通过删除那个工程来达到去掉错误提交的效果，我的heavy工程是 [loveci](https://github.com/ahangchen/loveci)
+> 建议新建另一个工程，对它做提交，这样可以通过删除那个工程来达到去掉错误提交的效果，我的heavy工程是 [love](https://github.com/ahangchen/love)
 
 > 似乎是因为git commit的本地记录有上限，一次提交太多commit而没有push，最前面的一部分的commit会丢失，所以一次push的commit不要太多哦，否则就要改配置文件再push一下来补上了
 
