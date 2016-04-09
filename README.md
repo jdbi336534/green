@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
 - 可以通过这个android工程方便的得到需要commit的index：[grid](https://github.com/ahangchen/grid)
 
-> 这些index的含义是，从github小绿点方针左上角第一个位置（第一列周日的位置），往后的天数
+> 这些index的含义是，从github小绿点方阵左上角第一个位置（第一列周日的位置），往后的天数
 
 > 建议新建另一个工程，对它做提交，这样可以通过删除那个工程来达到去掉错误提交的效果，我的heavy工程是 [love](https://github.com/ahangchen/love)
 
